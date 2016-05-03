@@ -1,23 +1,23 @@
-package lk.dialog.ideabiz.api.model.common.sms;
+package lk.dialog.ideabiz.api.model.common.sms.Outbound;
+
+import lk.dialog.ideabiz.api.model.common.sms.ReceiptRequest;
 
 import java.util.ArrayList;
 
 /**
  * Created by Malinda on 7/13/2015.
  */
-public class OutboundSMSMessageRequest {
-    ArrayList<String> address;
-    String senderAddress;
-    String clientCorrelator;
-    String senderName;
-    OutboundSMSTextMessage outboundSMSTextMessage;
-    ReceiptRequest receiptRequest;
+public class OutboundSMSMessageResponse  extends OutboundSMSMessageRequest{
+
+    DeliveryInfoList deliveryInfoList;
+    String resourceURL;
+    String serverReferenceCode;
 
 
-    public OutboundSMSMessageRequest() {
+    public OutboundSMSMessageResponse() {
     }
 
-    public OutboundSMSMessageRequest( ArrayList<String> address, String message,String senderAddress, String senderName) {
+    public OutboundSMSMessageResponse(ArrayList<String> address, String message, String senderAddress, String senderName) {
         this.senderAddress = senderAddress;
         this.address = address;
         this.senderName = senderName;
@@ -25,7 +25,7 @@ public class OutboundSMSMessageRequest {
         this.receiptRequest = new ReceiptRequest("", "");
     }
 
-    public OutboundSMSMessageRequest(String address, String message,String senderAddress, String senderName) {
+    public OutboundSMSMessageResponse(String address, String message, String senderAddress, String senderName) {
 
         ArrayList<String> addressL = new ArrayList<String>();
         addressL.add(address);
@@ -83,6 +83,30 @@ public class OutboundSMSMessageRequest {
 
     public void setReceiptRequest(ReceiptRequest receiptRequest) {
         this.receiptRequest = receiptRequest;
+    }
+
+    public DeliveryInfoList getDeliveryInfoList() {
+        return deliveryInfoList;
+    }
+
+    public void setDeliveryInfoList(DeliveryInfoList deliveryInfoList) {
+        this.deliveryInfoList = deliveryInfoList;
+    }
+
+    public String getResourceURL() {
+        return resourceURL;
+    }
+
+    public void setResourceURL(String resourceURL) {
+        this.resourceURL = resourceURL;
+    }
+
+    public String getServerReferenceCode() {
+        return serverReferenceCode;
+    }
+
+    public void setServerReferenceCode(String serverReferenceCode) {
+        this.serverReferenceCode = serverReferenceCode;
     }
 }
 

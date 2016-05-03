@@ -1,4 +1,4 @@
-package lk.dialog.ideabiz.api.model.common.sms;
+package lk.dialog.ideabiz.api.model.common.sms.Outbound;
 
 /**
  * Created by Malinda on 7/13/2015.
@@ -20,4 +20,6 @@ public class OutboundSMSTextMessage {
     public void setMessage(String message) {
         this.message = message;
     }
+
+
 }

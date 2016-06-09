@@ -1,4 +1,4 @@
-package lk.dialog.ideabiz.api.model.common.sms;
+package lk.dialog.ideabiz.api.model.common.sms.Inbound;
 
 /**
  * Created by Malinda on 7/10/2015.

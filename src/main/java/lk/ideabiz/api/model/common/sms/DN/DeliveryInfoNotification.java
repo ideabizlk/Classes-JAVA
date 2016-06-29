@@ -1,5 +1,6 @@
 package lk.ideabiz.api.model.common.sms.DN;
 
+
 /**
  * Created by Malinda_07654 on 2/16/2016.
  */

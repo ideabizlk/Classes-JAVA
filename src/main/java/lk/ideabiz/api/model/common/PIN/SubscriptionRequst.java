@@ -6,6 +6,7 @@ package lk.ideabiz.api.model.common.PIN;
 public class SubscriptionRequst {
     String msisdn;
     String method;
+    String description;
 
     public String getMsisdn() {
         return msisdn;
@@ -21,5 +22,13 @@ public class SubscriptionRequst {
 
     public void setMethod(String method) {
         this.method = method;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

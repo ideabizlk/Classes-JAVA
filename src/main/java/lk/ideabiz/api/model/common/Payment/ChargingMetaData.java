@@ -7,7 +7,7 @@ public class ChargingMetaData {
     String onBehalfOf;
     String channel;
     Double taxAmount;
-    Long serviceID;
+    String serviceID;
 
     public String getOnBehalfOf() {
         return onBehalfOf;
@@ -33,11 +33,12 @@ public class ChargingMetaData {
         this.taxAmount = taxAmount;
     }
 
-    public Long getServiceID() {
+    public String getServiceID() {
         return serviceID;
     }
 
-    public void setServiceID(Long serviceID) {
+    public void setServiceID(String serviceID) {
         this.serviceID = serviceID;
     }
+
 }

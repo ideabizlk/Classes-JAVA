@@ -7,6 +7,7 @@ public class SubscriptionRequst {
     String msisdn;
     String method;
     String description;
+    String serviceId;
 
     public String getMsisdn() {
         return msisdn;
@@ -30,5 +31,13 @@ public class SubscriptionRequst {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getServiceId() {
+        return serviceId;
+    }
+
+    public void setServiceId(String serviceId) {
+        this.serviceId = serviceId;
     }
 }

@@ -1,5 +1,7 @@
 package lk.ideabiz.api.model.common.PIN;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by Malinda_07654 on 7/4/2016.
  */
@@ -7,6 +9,7 @@ public class SubscriptionRequst {
     String msisdn;
     String method;
     String description;
+    @SerializedName(value = "serviceId", alternate = {"ServiceID", "serviceID","ServiceId"})
     String serviceId;
 
     public String getMsisdn() {

@@ -9,6 +9,9 @@ public class SubscriptionRequst {
     String msisdn;
     String method;
     String description;
+    PINMeta pinMeta;
+
+    /* gson 2.4 or later need */
     @SerializedName(value = "serviceId", alternate = {"ServiceID", "serviceID","ServiceId"})
     String serviceId;
 
@@ -42,5 +45,13 @@ public class SubscriptionRequst {
 
     public void setServiceId(String serviceId) {
         this.serviceId = serviceId;
+    }
+
+    public PINMeta getPinMeta() {
+        return pinMeta;
+    }
+
+    public void setPinMeta(PINMeta pinMeta) {
+        this.pinMeta = pinMeta;
     }
 }

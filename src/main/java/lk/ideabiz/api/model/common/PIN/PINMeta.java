@@ -9,6 +9,8 @@ public class PINMeta {
     String appCode; //com.dialog.llll
     String headers; // any optional headers
     String remoteRef;// User info in remote app
+    String utmSource; //User source
+    String IP; //User source
 
     public String getPINRef() {
         return PINRef;
